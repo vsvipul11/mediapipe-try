@@ -12,12 +12,13 @@
 
 <body> 
   <div class="container">
-<!--     <video class="input_video" ></video>
-    <div class="canvas-container"> -->
+    <video class="input_video" ></video>
+    <div class="canvas-container">
     <canvas class="output_canvas" width="1280px" height="1260px">
-      
+     
     </canvas>
     </div>
+    
     
     <!-- <div class="loading">
       <div class="spinner"></div>
@@ -168,16 +169,17 @@ p.draw = function () {
       minTrackingConfidence: 0.9,
     });
     faceMesh.onResults(onResults);
-    
+    document.getElementsByClassName("input_video").style.display = "hidden";
     
     const camera = new Camera(videoElement, {
       onFrame: async () => {
         await faceMesh.send({image: videoElement});
       },
-      width: 1280,
-      height: 720
+      width: 360px,
+      height: 720px,
     });
     camera.start();
     </script>
+  
 </body>
 </html>
