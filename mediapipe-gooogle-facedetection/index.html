@@ -14,7 +14,7 @@
   <div class="container">
     <video class="input_video" style="display: none;"></video>
     <div class="canvas-container">
-    <canvas class="output_canvas" width="360px" height="900px">
+    <canvas class="output_canvas" width="600px" height="900px">
      
     </canvas>
     </div>
@@ -141,7 +141,7 @@ p.draw = function () {
         for (const landmarks of results.multiFaceLandmarks) {
           drawConnectors(canvasCtx, landmarks, FACEMESH_LIPS, {color: 'rgba(179, 59, 36, 0.10)' ,lineWidth: 1});
           drawConnectors(canvasCtx, landmarks, FACEMESH_TESSELATION,
-                         {color: 'rgba(179, 59, 36, 0.20)', lineWidth: 10,});
+                         {color: 'rgba(179, 59, 36, 0.50)', lineWidth: 7,});
           
           // // drawConnectors(canvasCtx, landmarks, FACEMESH_RIGHT_EYE, {color: '#FF3030'});
           // drawConnectors(canvasCtx, landmarks, FACEMESH_RIGHT_EYEBROW, {color: '#FF3030'});
