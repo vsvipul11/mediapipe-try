@@ -169,7 +169,7 @@ p.draw = function () {
       minTrackingConfidence: 0.9,
     });
     faceMesh.onResults(onResults);
-    document.getElementsByClassName("input_video").style.display = "hidden";
+    document.getElementsByClassName("input_video").style.display = "none";
     
     const camera = new Camera(videoElement, {
       onFrame: async () => {
